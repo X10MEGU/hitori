@@ -4387,42 +4387,44 @@ module.exports = naze = async (naze, m, msg, store, groupCache) => {
 			break
 			case 'ownermenu': {
 				m.reply(`
-╭──❍「 *OWNER* 」❍
-│${setv} ${prefix}bot [set]
-│${setv} ${prefix}setbio
-│${setv} ${prefix}setppbot
-│${setv} ${prefix}join
-│${setv} ${prefix}leave
-│${setv} ${prefix}block
-│${setv} ${prefix}listblock
-│${setv} ${prefix}openblock
-│${setv} ${prefix}listpc
-│${setv} ${prefix}listgc
-│${setv} ${prefix}ban
-│${setv} ${prefix}unban
-│${setv} ${prefix}mute
-│${setv} ${prefix}unmute
-│${setv} ${prefix}creategc
-│${setv} ${prefix}clearchat
-│${setv} ${prefix}addprem
-│${setv} ${prefix}delprem
-│${setv} ${prefix}listprem
-│${setv} ${prefix}addlimit
-│${setv} ${prefix}adduang
-│${setv} ${prefix}getmsgstore
-│${setv} ${prefix}bot --settings
-│${setv} ${prefix}bot settings
-│${setv} ${prefix}getsession
-│${setv} ${prefix}delsession
-│${setv} ${prefix}delsampah
-│${setv} ${prefix}upsw
-│${setv} ${prefix}backup
-│${setv} $
-│${setv} >
-│${setv} <
+case 'ownermenu': {
+	m.reply(`
+╭──❍「 *قائمة المالك* 」❍
+│${setv} ${prefix}bot [إعداد]
+│${setv} ${prefix}setbio - تغيير البايو
+│${setv} ${prefix}setppbot - تغيير صورة البوت
+│${setv} ${prefix}join - دخول مجموعة برابط
+│${setv} ${prefix}leave - مغادرة مجموعة
+│${setv} ${prefix}block - حظر مستخدم
+│${setv} ${prefix}listblock - عرض المحظورين
+│${setv} ${prefix}openblock - إزالة الحظر
+│${setv} ${prefix}listpc - عرض المحادثات الخاصة
+│${setv} ${prefix}listgc - عرض المجموعات
+│${setv} ${prefix}ban - حظر مؤقت
+│${setv} ${prefix}unban - إزالة الحظر
+│${setv} ${prefix}mute - كتم
+│${setv} ${prefix}unmute - إلغاء الكتم
+│${setv} ${prefix}creategc - إنشاء مجموعة
+│${setv} ${prefix}clearchat - مسح المحادثة
+│${setv} ${prefix}addprem - إضافة مستخدم مميز
+│${setv} ${prefix}delprem - إزالة مستخدم مميز
+│${setv} ${prefix}listprem - قائمة المميزين
+│${setv} ${prefix}addlimit - زيادة الحد
+│${setv} ${prefix}adduang - إضافة رصيد
+│${setv} ${prefix}getmsgstore - جلب الرسائل المحفوظة
+│${setv} ${prefix}bot --settings - إعدادات البوت
+│${setv} ${prefix}bot settings - إعدادات البوت
+│${setv} ${prefix}getsession - جلب الجلسة
+│${setv} ${prefix}delsession - حذف الجلسة
+│${setv} ${prefix}delsampah - حذف الملفات المؤقتة
+│${setv} ${prefix}upsw - رفع حالة (ستوري)
+│${setv} ${prefix}backup - نسخ احتياطي
+│${setv} $ - تنفيذ كود شيل
+│${setv} > - تنفيذ كود JavaScript
+│${setv} < - تنفيذ كود غير مباشر
 ╰──────❍`)
-			}
-			break
+}
+break
 
 			default:
 			if (budy.startsWith('>')) {
